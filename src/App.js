@@ -1,20 +1,22 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import Counter from './components/Counter/Counter';
 
 function App() {
+
+  const handleOnAdd = (quantity) => {
+    console.log(`La cantidad agregada es: ${quantity}`)
+  }
+
+
   return (
     <div className="App">
-      {/* <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        {/* <p>
-          Bienvenidos
-        </p>
-        <button style= {{color: 'red', backgroundColor: 'blue', fontSize: '30px'}}>Button</button>
-      </header> */}  
+  
       <Navbar />
       <ItemListContainer greeting='Bienvenidos a su perfumeria online'/>
+      <Counter stock={10} onAdd={handleOnAdd}/>
     </div>
   );
 }

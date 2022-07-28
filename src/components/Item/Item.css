@@ -1,0 +1,38 @@
+ul{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:25px;
+}
+.card-container{
+    width: 300px;
+    overflow: hidden;
+    box-shadow:0px 0px 15px -5px;
+}
+.image-container img{
+    margin-top: 10px;
+    overflow: hidden;
+    height: 200px;
+}
+.card-content{
+    margin:1rem;
+    margin-top: 0.5rem;
+}
+
+.card-title{
+    margin-bottom: 0.5rem;
+}
+
+button{
+    padding: 0.5rem;
+    background-color: white;
+    border: none;
+    transition: 0.2s;
+    margin: 0.5rem;
+    font-weight: bold;
+    border-radius: 3px;
+}
+button:hover{
+    background:rgba(27, 156, 252, 0.1) ;
+}
